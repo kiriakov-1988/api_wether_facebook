@@ -17,7 +17,7 @@ class WetherController extends Controller
         $ch = \curl_init();
 
         // set url
-        \curl_setopt($ch, CURLOPT_URL, "http://api.wunderground.com/api/2a838bb91667dbae/forecast/lang:UA/q/UA/Kiev.json");
+        \curl_setopt($ch, CURLOPT_URL, "http://api.wunderground.com/api/SECRET/forecast/lang:UA/q/UA/Kiev.json");
         //return the transfer as a string
         \curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         // $output contains the output string
@@ -35,7 +35,7 @@ class WetherController extends Controller
 
         // $fb = new Facebook([
         //   'app_id' => '434511280338313',
-        //   'app_secret' => 'secret_#',
+        //   'app_secret' => 'SECRET',
         //   'default_graph_version' => 'v2.2',
         //   ]);
 
