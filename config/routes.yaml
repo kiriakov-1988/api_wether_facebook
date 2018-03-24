@@ -1,0 +1,8 @@
+# index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+wether:
+   path: /wether
+   controller: App\Controller\WetherController::index
+
